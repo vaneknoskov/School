@@ -43,6 +43,25 @@ public class Lesson3DataTypes {
         // float занимает 32бита и содержит от -3.4E+38 до 3.4E+38
         // double занимает 64 бита и содержит от -1.7E+308 до 1.7E+308
     }
+
+    void programTask36(){
+        char a = '+';
+        char b = '!';
+        char c = '?';
+        System.out.print(a + "\n" + b + "\n" + c );
+
+        // char занимает 16 бит памяти и содержит от 0 до 65546 значений
+    }
+
+    void programTask37(){
+        int x = 'r';
+        char x1 = 123;
+        double x2 = 0x123D;
+        int x3 = 0x123F;
+        short x4 = 7;
+        double x5 = 9;
+        int x6 = 5;
+    }
 }
 
 
