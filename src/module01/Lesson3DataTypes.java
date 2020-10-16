@@ -38,7 +38,6 @@ public class Lesson3DataTypes {
     void programTask35(){
         float A = 1245.554f;
         double B = 256.3785;
-        double C = A * B;
         System.out.println((A*B)%1);
 
         // float занимает 32бита и содержит от -3.4E+38 до 3.4E+38
