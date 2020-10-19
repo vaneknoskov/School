@@ -16,6 +16,7 @@ public class Lesson4Operator {
         assignmentOperators();
         incrementAndDecrementOperators();
         comparisonOperators();
+        logicalOperators();
     }
 
     static void assignmentOperators(){
@@ -60,6 +61,7 @@ public class Lesson4Operator {
     }
 
     static void comparisonOperators(){
+        System.out.println("///////// Comparison Operators ///////////");
         int a = 3;
         int b = 5;
         compare(a,b);
@@ -84,7 +86,30 @@ public class Lesson4Operator {
     }
 
     static void logicalOperators(){
+        System.out.println("////////// Logical Operators ///////////");
+        boolean bOne = true;
+        boolean bTwo = false;
 
+        compareBool(bOne, bTwo);
+
+        bTwo = true;
+
+        compareBool(bOne, bTwo);
+
+        // Логические операторы возращают boolean
+        //
+
+
+    }
+    static void compareBool(boolean a , boolean b){
+        System.out.println(a && b);
+        System.out.println(a || b);
+        System.out.println(! a);
+        System.out.println(! b);
+        System.out.println(a & b);
+        System.out.println(a | b);
+        System.out.println(a ^ b);
+        System.out.println();
     }
 
 }
