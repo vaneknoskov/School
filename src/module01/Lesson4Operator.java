@@ -15,6 +15,7 @@ public class Lesson4Operator {
         System.out.println(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f + "\n" + i );
         assignmentOperators();
         incrementAndDecrementOperators();
+        comparisonOperators();
     }
 
     static void assignmentOperators(){
@@ -57,4 +58,33 @@ public class Lesson4Operator {
         * */
 
     }
+
+    static void comparisonOperators(){
+        int a = 3;
+        int b = 5;
+        compare(a,b);
+
+        a = 5;
+        compare(a,b);
+        // Результат изменился из-за изменения переменной "a" на аналогичное значение переменной "b"
+        // Оператор сравнения возращает boolean
+
+        boolean c = (a != b);
+        System.out.println(c); // так как a не равно(!=) b, то возвращает false
+    }
+
+    static void compare(int a, int b){
+        System.out.println(a > b);
+        System.out.println(a < b);
+        System.out.println(a <= b);
+        System.out.println(a >= b);
+        System.out.println(a == b);
+        System.out.println(a != b);
+        System.out.println();
+    }
+
+    static void logicalOperators(){
+
+    }
+
 }
