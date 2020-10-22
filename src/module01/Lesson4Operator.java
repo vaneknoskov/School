@@ -3,7 +3,7 @@ package module01;
 public class Lesson4Operator {
     public static void main(String[] args) {
 
-        System.out.println("///////////////   Math operator //////////////");
+        System.out.println("///////////////PT41   Math operator  //////////////");
 
         int a = 10 + 2;
         int b = a + 5;
@@ -17,10 +17,11 @@ public class Lesson4Operator {
         incrementAndDecrementOperators();
         comparisonOperators();
         logicalOperators();
+        bitwiseOperators();
     }
 
     static void assignmentOperators(){
-        System.out.println("//////// AssignmentOperator //////////");
+        System.out.println("////////PT42 AssignmentOperator //////////");
 
         int a = 10;
         System.out.println(a);
@@ -37,7 +38,7 @@ public class Lesson4Operator {
     }
 
     static void incrementAndDecrementOperators(){
-        System.out.println("////////////  Increment and decrement operators ///////////");
+        System.out.println("////////////PT43  Increment and decrement operators ///////////");
 
         int a = 0;
         int b = 5;
@@ -61,7 +62,7 @@ public class Lesson4Operator {
     }
 
     static void comparisonOperators(){
-        System.out.println("///////// Comparison Operators ///////////");
+        System.out.println("/////////PT44 Comparison Operators ///////////");
         int a = 3;
         int b = 5;
         compare(a,b);
@@ -86,7 +87,7 @@ public class Lesson4Operator {
     }
 
     static void logicalOperators(){
-        System.out.println("////////// Logical Operators ///////////");
+        System.out.println("//////////PT45 Logical Operators ///////////");
         boolean bOne = true;
         boolean bTwo = false;
 
@@ -97,8 +98,21 @@ public class Lesson4Operator {
         compareBool(bOne, bTwo);
 
         // Логические операторы возращают boolean
-        //
+        //NOT!  я незнаю в чем разница.
+        //Разница && от & в том, что при использовании && идет проверка левого операнда, и
+        //если он false , то оператор возвращает false без проверки второго операнда.
+        //Так же происходит с || и |, при || если слева true, то возрвщает true без проверки второго операнда.
 
+        /*
+        a. true || false        true
+        b. false && true        false
+        c. !true || 1 >= 0      true
+        d. false && 5           не будет работать, должна идти boolean проверка
+        e. true &&! false       true
+        f. true ^! true         true
+        i. 1> = 1 || false      true
+        g. true && 5 - 5        тоже не будет работать
+         */
 
     }
     static void compareBool(boolean a , boolean b){
@@ -110,6 +124,12 @@ public class Lesson4Operator {
         System.out.println(a | b);
         System.out.println(a ^ b);
         System.out.println();
+    }
+
+    static void bitwiseOperators(){
+        System.out.println("//////////PT46  Bitwise Operators  ////////////");
+
+
     }
 
 }
