@@ -1,8 +1,18 @@
 package module01;
 
+
 public class Lesson4Operator {
     public static void main(String[] args) {
+        mathOperator();
+        assignmentOperators();
+        incrementAndDecrementOperators();
+        comparisonOperators();
+        logicalOperators();
+        bitwiseOperators();
+        bitShiftOperators();
+    }
 
+    static void mathOperator(){
         System.out.println("///////////////PT41   Math operator  //////////////");
 
         int a = 10 + 2;
@@ -14,10 +24,7 @@ public class Lesson4Operator {
         int i = -f;
         System.out.println(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e + "\n" + f + "\n" + i );
         assignmentOperators();
-        incrementAndDecrementOperators();
-        comparisonOperators();
-        logicalOperators();
-        bitwiseOperators();
+
     }
 
     static void assignmentOperators(){
@@ -129,7 +136,24 @@ public class Lesson4Operator {
     static void bitwiseOperators(){
         System.out.println("//////////PT46  Bitwise Operators  ////////////");
 
+        int a = 4;
+        int b = 3; // 0011
 
+        System.out.println(a & b);
+        System.out.println(a | b);
+        System.out.println(~b); //меняет биты на противоположные, 1 на 0, а 0 на 1.
+        System.out.println(a ^ b);
+
+    }
+
+    static void bitShiftOperators(){
+        System.out.println("///////////PT47  Bit Shift Operators /////////////");
+        int a = 10;
+
+        System.out.println(a << 1); // Сдвигая биты влево на 1, мы умножаем число вдвое. Если сдвинуть на 2 , то в 4 раза
+        System.out.println(a >> 1); // Тоже самое и со сдвигом впрво, сдвинув на бит, мы делим пополам.
+        a = -5;
+        System.out.println(a >>> 1); 
     }
 
 }
