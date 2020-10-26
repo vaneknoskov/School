@@ -19,5 +19,18 @@ public class Lesson6Arrays {
 
         System.out.println("Task 3");
 
+        swap(array, 0,1);
+
+        System.out.println("Task 4");
+
+
+
+    }
+    private static void swap(int[] arrays, int indexA, int indexB) {
+        System.out.println("Trying swap: " + Arrays.toString(arrays) + " indices " + indexA + " and " + indexB);
+        int a = arrays[indexB];
+        arrays[indexB] = arrays[indexA];
+        arrays[indexA] = a;
+        System.out.println("Result: " + Arrays.toString(arrays) + "\n");
     }
 }
