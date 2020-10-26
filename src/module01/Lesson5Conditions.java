@@ -56,7 +56,8 @@ public class Lesson5Conditions {
         * */
         int num = 8;
         String message = "";
-        System.out.println(num > 10 ? "Number is greater than 10" : "Number is less than or equal to 10");
+        String result = num > 10 ? "Number is greater than 10" : "Number is less than or equal to 10";
+        System.out.println(result);
     }
 }
 
