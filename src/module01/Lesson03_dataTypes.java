@@ -1,6 +1,6 @@
 package module01;
                             /////////// TASK 31 ////////////
-public class Lesson3DataTypes {
+public class Lesson03_dataTypes {
     public static void main(String[] args) {
         byte a = 127;
         byte b = (byte)255;

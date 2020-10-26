@@ -3,7 +3,7 @@ package module01;
 
 import java.util.Scanner;
 
-public class Lesson5Conditions {
+public class Lesson05_conditions {
     public static void main(String[] args) {
         System.out.println("Task 1." + "\n" + "Ничего не будет выведено на консоль." + "\n");
         System.out.println("Task 2.");

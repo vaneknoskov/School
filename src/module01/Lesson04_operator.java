@@ -1,7 +1,7 @@
 package module01;
 
 
-public class Lesson4Operator {
+public class Lesson04_operator {
     public static void main(String[] args) {
         mathOperator();
         assignmentOperators();
