@@ -29,6 +29,20 @@ public class lesson07_loops {
 
         System.out.println("Task 4");
 
-
+        int j = 0;
+        int k = 7;
+        while (j < k){
+            for (int l = 0; l < k - j; l++){
+                System.out.print(" ");
+            }
+            for(int l = 0; l < j * 2 + 1; l++){
+                System.out.print("*");
+            }
+            System.out.println();
+            j++;
         }
     }
+}
+
+
+
