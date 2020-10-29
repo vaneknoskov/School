@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-public class Lesson06_comparable_comporator {
+public class Lesson06_comparable_comparator {
 
 
     public static void main(String[] args) {
@@ -76,6 +76,7 @@ class ComparatorAutoModelSpeed implements Comparator <Car>{
     public int compare(Car o1, Car o2) {
         int sortModel = o1.model.compareTo(o2.model);
         return sortModel == 0 ? o2.speed - o1.speed : sortModel;
-
+        //Сортировка по моделям (по возрастанию) и скорости(по убыванию)
+        //Если модель совпала, то сорт. по скорости(по примеру видимо тоже по убиванию)
     }
 }
