@@ -59,5 +59,5 @@ class ComparatorAuto implements Comparator <Car> {
     @Override
     public int compare(Car o1, Car o2) {
         return o2.model.compareTo(o1.model); // сортировка по моделям по убиванию(в алф. пор.)
-    }
+    }                                        // поменяв местами о2 <- о1 будет сортировка по возр.
 }
