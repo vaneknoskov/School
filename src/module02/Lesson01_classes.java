@@ -7,6 +7,7 @@ public class Lesson01_classes {
     public static void main(String[] args) {
         Person person = new Person("Ivan", 27);
         person.meditation();
+
     }
 }
 
@@ -34,3 +35,16 @@ class Person{
     }
 
 }
+
+class Cat{
+    String name;
+    int age;
+
+    enum Breed {
+        SIAMESE,
+        NEBELUNG,
+        BIRMAN;
+    }
+}
+
+
