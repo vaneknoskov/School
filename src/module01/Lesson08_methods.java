@@ -2,6 +2,7 @@ package module01;
 
 public class Lesson08_methods {
     public static void main(String[] args) {
+        // 1. Parameters
         evenAndOdd();
         fromOneToX(20);
     }
