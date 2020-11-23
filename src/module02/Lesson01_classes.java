@@ -2,7 +2,6 @@ package module02;
 
 import java.util.Date;
 
-
 public class Lesson01_classes {
     public static void main(String[] args) {
         Person person = new Person("Ivan", 27);
@@ -13,7 +12,7 @@ public class Lesson01_classes {
     }
 }
 
-class Person{
+class Person  {
 
     Date date = new Date();
 
